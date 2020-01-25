@@ -3,9 +3,9 @@ jQuery( document ).ready( function ( $ ) {
 
 //for Preloader
 
-    $( window ).load( function () {
-        $( "#loading" ).fadeOut( 500 );
-    } );
+    // $( window ).load( function () {
+    //     $( "#loading" ).fadeOut( 500 );
+    // } );
 
 
     /*---------------------------------------------*
@@ -19,6 +19,7 @@ jQuery( document ).ready( function ( $ ) {
                 $( 'html,body' ).animate( {
                     scrollTop: ( target.offset().top - 80 )
                 }, 1000 );
+                
                 if ( $( '.navbar-toggle' ).css( 'display' ) != 'none' ) {
                     $( this ).parents( '.container' ).find( ".navbar-toggle" ).trigger( "click" );
                 }
@@ -105,11 +106,11 @@ jQuery( document ).ready( function ( $ ) {
 
 //Team Skillbar active js
 
-    jQuery( '.teamskillbar' ).each( function () {
-        jQuery( this ).find( '.teamskillbar-bar' ).animate( {
-            width: jQuery( this ).attr( 'data-percent' )
-        }, 6000 );
-    } );
+    // jQuery( '.teamskillbar' ).each( function () {
+    //     jQuery( this ).find( '.teamskillbar-bar' ).animate( {
+    //         width: jQuery( this ).attr( 'data-percent' )
+    //     }, 6000 );
+    // } );
 
 
 // scrool Down
