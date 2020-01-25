@@ -882,8 +882,16 @@ Nav Menu style
 nav.navbar.bootsnav ul.nav li.active > a{
     color:#fddc57;
 }
+
+nav.navbar.bootsnav ul.nav li > a:hover{
+    color:#111111;
+}
+
 nav.navbar.bootsnav.no-background.white ul.nav > li > a {
     color: #fff;
+}
+nav.navbar.bootsnav.no-background.white ul.nav > li > a:hover {
+    color: #dddddd;
 }
 nav.navbar.bootsnav.no-background.white ul.nav > li.active > a {
     color: #fddc57;
@@ -1339,11 +1347,6 @@ tems Section style
     padding:0.5rem 1rem;
 }
 
-
-
-
-
-
 /*Test Section
 ======================*/
 .main_test{
@@ -1627,6 +1630,7 @@ tems Section style
 @media screen and (max-width: 1090px) {
     nav.navbar.bootsnav.no-background.white ul.nav > li > a {color: #6f6f6f;}
     .features_item .head_title,.featured_content {float: left; clear:left;margin-top:3rem;padding-bottom:0px;}
+    .footer-left-column-heading, .footer-mid-column-heading, .footer-right-column-heading {text-align:center;}
 }
 
 /*Small screen optimisation*/
@@ -1653,9 +1657,6 @@ tems Section style
 
 .fa-facebook,.fa-linkedin,.fa-youtube {
   padding: 10px;
-  /*font-size: 30px;*/
-  /*width: 30px;*/
-  /*height: 30px;*/
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
@@ -1665,6 +1666,7 @@ tems Section style
 .fa-facebook {
   background: #3B5998;
   color: white;
+  padding: 10px 12px 10px 10px;;
 }
 .fa-linkedin {
   background: #007bb5;
@@ -1688,4 +1690,25 @@ tems Section style
     background-size: 128px 128px;
     width: 128px;
     height: 128px;
+}
+@media screen and (min-width: 1350px) {
+    .team-founder {
+        margin-left:12rem;
+        margin-right:12rem;
+    }
+
+    .team-partner-1 {
+        clear:left;
+        margin-left:3rem;
+        margin-right:3rem;
+    }
+
+    .team-partner-2 {
+        margin-left:3rem;
+        margin-right:3rem;
+    }
+}
+
+.footer-query-button {
+    width: 100%;
 }
