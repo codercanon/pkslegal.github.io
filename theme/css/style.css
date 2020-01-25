@@ -1163,14 +1163,7 @@ tems Section style
 .teams_item h5{
     font-size:12px;
 }
-.teams_item ul li a i{
-    color:#7b8895;
-    transition: all 0.6s;
-    font-size:16px;
-}
-.teams_item ul li a:hover i{
-    color:#fddc57;
-}
+
 /*team Skill bar*/
 .teamskillbar {
     position:relative;
@@ -1508,6 +1501,7 @@ tems Section style
 }
 .widget_newsletter li a i{
     color:#aaa;
+    background: #6b6b6b;
 }
 
 
@@ -1638,19 +1632,53 @@ tems Section style
 /*Small screen optimisation*/
 @media screen and (max-width: 480px) {
     .home_text h1{font-size : 4rem;line-height:4rem;}
-    .home_text h3{font-size : 1rem;}
+    .home_text h3{font-size : 1rem;margin-top:4rem;}
     .locate-map iframe { width: 380px !important;; height:380px !important;;}
     .mouse-scroll {visibility: hidden;}
     .blogcontent .container {padding-left:10%; padding-right:10%; padding-top:2rem;}
     .thankyounewsletter .container {padding-left:5%; padding-right:5%; padding-top:2rem;}
     .home {padding-top:150px;padding-bottom:150px;}
     .home .m-top-100 {margin-top:25px;}
-    
+    .choose_mac {max-width:380px; max-height:260px;}
+    .teams_item ul li a i{padding: 0.5rem;font-size:16px;}
 }
+
 
 @media screen and (max-width: 380px) {
     .locate-map iframe { width: 340px !important;; height:340px !important;;}
     .mouse-scroll {visibility: hidden;}
     .blogcontent .container {padding-left:5%; padding-right:5%; padding-top:2rem;}
-
+    .choose_mac {max-width:330px; max-height:260px;}
 }
+
+.fa-facebook,.fa-linkedin,.fa-youtube {
+  padding: 10px;
+  /*font-size: 30px;*/
+  /*width: 30px;*/
+  /*height: 30px;*/
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-bottom:20px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-youtube {
+  background: #007bb5;
+  color: white;
+}
+
+
+.fa-facebook:hover,.fa-linkedin:hover {
+    opacity: 0.7;
+    color:#fddc57;
+    transition: all 0.6s;
+}
+
