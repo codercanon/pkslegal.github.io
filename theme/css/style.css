@@ -1566,7 +1566,7 @@ tems Section style
 .navbar .btn-navbar-call{color: #00000;}
 
 .aboutus {
-    height:40rem;  
+    min-height:40rem;  
 }
 
 .aboutus .container {
@@ -1575,7 +1575,7 @@ tems Section style
 }
 
 .contactus {
-    height:50rem;  
+    min-height:50rem;  
 }
 
 .contactus .container {
@@ -1583,14 +1583,14 @@ tems Section style
 }
 
 .thankyou {
-    height:20rem;  
+    min-height:20rem;  
 }
 .thankyou .container {
     padding: 5rem 5rem 5rem 5rem;
 }
 
 .thankyounewsletter {
-    height:40rem;  
+    min-height:40rem;  
 }
 .thankyounewsletter .container {
     padding: 10rem 10rem 10rem 10rem;
@@ -1619,9 +1619,38 @@ tems Section style
 }
 
 #blogpageheader {
-    max-height: 10rem;
+    min-height: 10rem;
 }
 
 .articlelistingcard {
     padding: 1rem 0.5rem 1rem 0.5rem;
+}
+
+.locate-map {text-align:center;}
+
+.locate-map iframe { width: 540px ; height:525px;}
+
+@media screen and (max-width: 1090px) {
+    nav.navbar.bootsnav.no-background.white ul.nav > li > a {color: #6f6f6f;}
+    .features_item .head_title,.featured_content {float: left; clear:left;margin-top:3rem;padding-bottom:0px;}
+}
+
+/*Small screen optimisation*/
+@media screen and (max-width: 480px) {
+    .home_text h1{font-size : 4rem;line-height:4rem;}
+    .home_text h3{font-size : 1rem;}
+    .locate-map iframe { width: 380px !important;; height:380px !important;;}
+    .mouse-scroll {visibility: hidden;}
+    .blogcontent .container {padding-left:10%; padding-right:10%; padding-top:2rem;}
+    .thankyounewsletter .container {padding-left:5%; padding-right:5%; padding-top:2rem;}
+    .home {padding-top:150px;padding-bottom:150px;}
+    .home .m-top-100 {margin-top:25px;}
+    
+}
+
+@media screen and (max-width: 380px) {
+    .locate-map iframe { width: 340px !important;; height:340px !important;;}
+    .mouse-scroll {visibility: hidden;}
+    .blogcontent .container {padding-left:5%; padding-right:5%; padding-top:2rem;}
+
 }
