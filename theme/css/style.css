@@ -1627,6 +1627,14 @@ tems Section style
 
 .locate-map iframe { width: 540px ; height:525px;}
 
+.custom-handcuff-icon{ 
+    background-image: url("/theme/images/cuff.png");
+    background-repeat: no-repeat;
+    background-size: 128px 128px;
+    width: 128px;
+    height: 128px;
+}
+
 @media screen and (max-width: 1090px) {
     nav.navbar.bootsnav.no-background.white ul.nav > li > a {color: #6f6f6f;}
     .features_item .head_title,.featured_content {float: left; clear:left;margin-top:3rem;padding-bottom:0px;}
@@ -1645,6 +1653,7 @@ tems Section style
     .home .m-top-100 {margin-top:25px;}
     .choose_mac {max-width:380px; max-height:260px;}
     .teams_item ul li a i{padding: 0.5rem;font-size:16px;}
+    .slide-icon {width: 109px; height: 109px;background-size: 128px 109px;}
 }
 
 
@@ -1684,13 +1693,7 @@ tems Section style
     transition: all 0.6s;
 }
 
-.custom-handcuff-icon{ 
-    background-image: url("/theme/images/cuff.png");
-    background-repeat: no-repeat;
-    background-size: 128px 128px;
-    width: 128px;
-    height: 128px;
-}
+
 @media screen and (min-width: 1350px) {
     .team-founder {
         margin-left:12rem;
